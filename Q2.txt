@@ -1,0 +1,26 @@
+Write a blog about objects and its internal representation in Javascript
+    Internal representation of objects in javascript can vary depending on the javascript engine being used(Ex V8 in chrome,Spider monkey in firefox)
+    but in general,ojects are typically implemented using a combination of data structures that includes,
+
+    1.PROPERTIES: 
+       Objects have properties, which are essentailly key-value pairs.These properties can be data properties(strong values) or accessor properties
+    (using getter and setter functions).Properties are usually stored in hash table or property map.
+
+    2.INTERNAL METHODS:
+       Objects can have ineternal methods, such as '[[GET]]', '[[SET]]' , '[[DELETE]]',and others, that define how property access
+    and manipulatiom are handled.These methods are not directly accessible from javascript code but are part of the javascript's internal behavior.
+
+    3.HIDDEN CLASSES(V8 ENGINE):
+       In V8 javascript engine, objects are optimized for perfomance using a concept called "hidden classes"(also known as shapes).Hidden classes 
+    are used to track the structure of objectb and optimize property access. When properties are added to an object,hidden classes may change to
+    reflect the object's new structure.
+
+    4.PROTOTYPES:
+       Objects in javascrit have a reference to a prototype object.This forms the basis for prototype-based inheritance.If a property is not found 
+    in an object,the javascriptlooks in the object's prototype chain to find it.
+
+    5.PROPERTY DESCRIPTORS:
+       Each property of an object has associated property descriptors that define it's attributes, such as whether it is writable,enumerable,
+    and configurable.Property descriptors can be obtained using the 'Object.getOwnPropertDescriptor'method     
+                
+       

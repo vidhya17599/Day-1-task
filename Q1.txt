@@ -1,0 +1,20 @@
+Write a blog on difference between HTTP 1.1 Vs HTTP 2
+
+HTTP 1.1:
+        1. It works on textual format
+        2.It uses request resource lining for getting multiple pages.
+        3.it compresses data by itself.
+        4.HTTP 1.1 allows only one request and response to be sent at a time.
+        5.All requests are treated equally.
+        6.Wrrors can disrupt the entire connection.
+        7.Server push is not supported.
+
+HTTP 2:
+         1.it works on binary protocol.
+         2.It uses PUSH frame by server that collects all multiple pages.
+         3.It uses HIACK for data compression.
+         4.HTTP 2 allows multiple request and response to be sent over a single connection.
+         5.It allows client to specify priority of request.
+         6.Errors are disrupted to individual streams, allowing other streams to continue unaffected.
+         7.It allows server push resource to clients before the client requests them,reducing the need for additional request.         
+    
